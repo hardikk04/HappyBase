@@ -47,7 +47,7 @@ tl.to(".page2-svg1", {
     start: "top 100%",
     end: "top 0%",
     scrub: 1,
-    markers: true,
+    // markers: true,
   },
 });
 
@@ -59,6 +59,6 @@ tl.to(".page2-svg2", {
     start: "top 100%",
     end: "top 0%",
     scrub: 1,
-    markers: true,
+    // markers: true,
   },
 });
