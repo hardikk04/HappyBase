@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+}
+
+.page1-line1 {
+  transform-origin: bottom;
+}
+.page1-line2 {
+  transform-origin: bottom;
+}
+.page1-line3 {
+  transform-origin: bottom;
+}
+.page1-line4 {
+  transform-origin: bottom;
+}
+.page1-line5 {
+  transform-origin: bottom;
+}
+.page1-line6 {
+  transform-origin: bottom;
+}
+.page1-line7 {
+  transform-origin: bottom;
+}
+.page1-line8 {
+  transform-origin: bottom;
+}
+.page1-line9 {
+  transform-origin: bottom;
+}
+
+.page1-path {
+  stroke-dasharray: 3200;
+  stroke-dashoffset: 3200;
+}
+
+.page1-path {
+  stroke-dasharray: 3200;
+  stroke-dashoffset: 3200;
+}
+
+h1 {
+  mix-blend-mode: difference;
+}
