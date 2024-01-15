@@ -62,3 +62,83 @@ tl.to(".page2-svg2", {
     // markers: true,
   },
 });
+
+gsap.to(".page2-path", {
+  strokeDashoffset: 0,
+  // strokeDasharray: 0,
+  duration: 3,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page2-path",
+    start: "top 40%",
+    end: "top 0%",
+    // markers: true,
+    // scrub: 1,
+  },
+});
+
+gsap.to(".page2-overlay", {
+  height: "140%",
+  width: "140%",
+  duration: 1,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page2",
+    start: "top 30%",
+    end: "top 0%",
+    // markers: true,
+    // scrub: 1,
+  },
+});
+
+gsap.to(".page3-img1", {
+  y: 150,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page3-img1",
+    start: "top 100%",
+    end: "top 0%",
+    // markers: true,
+    scrub: 1,
+  },
+});
+
+gsap.to(".page3-img2", {
+  y: -150,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page3-img1",
+    start: "top 100%",
+    end: "top 0%",
+    // markers: true,
+    scrub: 1,
+  },
+});
+
+gsap.to(".page3-path", {
+  strokeDashoffset: 0,
+  duration: 3,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page3-path",
+    start: "top 50%",
+    end: "top 0%",
+    // markers: true,
+    // scrub: 1,
+  },
+});
+
+gsap.from(".page3-hero>h1", {
+  y: 120,
+  opacity: 0,
+  stagger: -0.3,
+  ease: "power1.out",
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page3-hero",
+    start: "top 80%",
+    end: "top 0%",
+    // markers: true,
+    // scrub: 1,
+  },
+});

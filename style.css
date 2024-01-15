@@ -48,11 +48,23 @@ html {
   stroke-dashoffset: 3200;
 }
 
-.page1-path {
+.page2-path {
   stroke-dasharray: 3200;
   stroke-dashoffset: 3200;
 }
 
-h1 {
-  mix-blend-mode: difference;
+.page2-overlay {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.page3-svg {
+  top: 16%;
+  left: 12%;
+}
+
+.page3-path {
+  stroke-dasharray: 3200;
+  stroke-dashoffset: 3200;
 }
