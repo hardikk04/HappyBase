@@ -91,6 +91,19 @@ gsap.to(".page2-overlay", {
   },
 });
 
+gsap.from(".page2-part2", {
+  scale: 0.9,
+  ease: "power1.out",
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page2-part2",
+    start: "top 50%",
+    end: "top 0%",
+    // markers: true,
+    // scrub: 1,
+  },
+});
+
 gsap.to(".page3-img1", {
   y: 150,
   scrollTrigger: {
@@ -131,7 +144,7 @@ gsap.to(".page3-path", {
 gsap.from(".page3-hero>h1", {
   y: 120,
   opacity: 0,
-  stagger: -0.3,
+  stagger: -0.2,
   ease: "power1.out",
   scrollTrigger: {
     scroller: "body",
@@ -140,5 +153,44 @@ gsap.from(".page3-hero>h1", {
     end: "top 0%",
     // markers: true,
     // scrub: 1,
+  },
+});
+
+gsap.to(".page4-svg1", {
+  rotate: 180,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page4-svg1",
+    start: "top 100%",
+    end: "top 10%",
+    // markers: true,
+    scrub: 0.1,
+  },
+});
+
+gsap.to(".page4-svg1", {
+  rotate: 180,
+  scale: 0.6,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page4-main-svg",
+    start: "top 0%",
+    end: "top -100%",
+    // markers: true,
+    scrub: 0.1,
+    pin: true,
+  },
+});
+
+gsap.to(".page4-path2,.page4-path3", {
+  strokeDashoffset: 0,
+  // strokeDasharray: 0,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page4-main-svg",
+    start: "top 0%",
+    end: "top -100%",
+    // markers: true,
+    scrub: 1,
   },
 });
