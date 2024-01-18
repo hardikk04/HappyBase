@@ -1,3 +1,19 @@
+const lenis = () => {
+  const lenis = new Lenis();
+
+  lenis.on("scroll", (e) => {});
+
+  lenis.on("scroll", ScrollTrigger.update);
+
+  gsap.ticker.add((time) => {
+    lenis.raf(time * 1000);
+  });
+
+  gsap.ticker.lagSmoothing(0);
+};
+
+lenis();
+
 const tl = gsap.timeline();
 
 gsap.to(".page1-path", {
@@ -190,6 +206,42 @@ gsap.to(".page4-path2,.page4-path3", {
     trigger: ".page4-main-svg",
     start: "top 0%",
     end: "top -100%",
+    // markers: true,
+    scrub: 1,
+  },
+});
+
+gsap.from(".page5-box", {
+  y: 250,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page5-box",
+    start: "top 100%",
+    end: "top 0%",
+    // markers: true,
+    scrub: 1,
+  },
+});
+
+gsap.from(".page6-img>img", {
+  y: 150,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page6-img>img",
+    start: "top 100%",
+    end: "top 0%",
+    // markers: true,
+    scrub: 1,
+  },
+});
+
+gsap.to(".page7-left>svg", {
+  rotate: 360,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page7-left>svg",
+    start: "top 100%",
+    end: "top 0%",
     // markers: true,
     scrub: 1,
   },
